@@ -165,6 +165,7 @@ def find_rz(rSep, zSep, a, Xs, eps):
 
 
 def get_flux_contours(psi, R, Z, psi_level_mag, return_all=False):
+    # returns rz
     # 1) Build a tiny OFF‐SCREEN figure, extract contours, then close it:
     plt.ioff()                     # turn off interactive showing
     fig, ax = plt.subplots(figsize=(0.1,0.1))  

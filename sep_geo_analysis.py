@@ -127,8 +127,6 @@ for e_i, elong in enumerate(elongation_arr):
         keep_lst.append(e_i)
 
         psi_int_arr.append(internal_psi_sporer(R, Z, a_arr[e_i], b_arr[e_i], Bw_arr[e_i], Xs_arr[e_i], f)) 
-        Br_int_arr.append((1/R) * internal_dpsi__dz_sporer(R, Z, a_arr[e_i], b_arr[e_i], Bw_arr[e_i], Xs_arr[e_i]))
-        Bz_int_arr.append(-(1/R) * internal_dpsi__dr_sporer(R, Z, a_arr[e_i], b_arr[e_i], Bw_arr[e_i], Xs_arr[e_i], f))
 
         E0, E1, E2, alpha = sol.x                           # grabs the solutions for E0, E1, E2, alpha
 
